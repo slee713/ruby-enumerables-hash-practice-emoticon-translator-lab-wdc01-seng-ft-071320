@@ -26,7 +26,7 @@ def get_japanese_emoticon(source, emoticon)
   emote = library.find do |expression, emoticons|
     emoticons[:english] == emoticon
   end
-
+  binding.pry
   emote ? library[emote][:japanese]: "Sorry, that emoticon was not found"
 end
 
