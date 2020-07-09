@@ -16,16 +16,16 @@ def load_library(emoticons)
     sorted_lib[expression][:japanese]=emote[1]
   end
   sorted_lib
-
 end
-# binding.pry
+
+
 def get_japanese_emoticon(source, emoticon)
   # code goes here
   library = load_library(source)
   japanese_emoticon
   # binding.pry
   library.each do |expression, emoticons|
-    if emoticons[:english] == emoticon]
+    if emoticons[:english] == emoticon
       japanese_emoticon =  emoticons[:japanese]
       japanese_emoticon
     end
