@@ -23,56 +23,20 @@ def get_japanese_emoticon(source, emoticon)
   # code goes here
   library = load_library(source)
   # binding.pry
-  emote = library.keys.find do |key|
-    library[key][:english] == emoticon
+  library.each do |expression, emoticons|
+    emoticons.include? emoticon ? emoticons[1]: "Sorry, that emoticon was not found"
   end
-  # binding.pry
-  emote ? library[emote][:japanese]: "Sorry, that emoticon was not found"
-
-    values = languages.collect {|k, v| v}
-    # binding.pry
-    values.include? emoticon
-        japanese_emote = languages[:japanese]
-      # binding.pry
-    end
+end
 
 
 
 
 
 def get_english_meaning(source, emoticon)
-  # code goes here
-
-  #
-  # library = load_library(source)
-  # # binding.pry
-  # library.each do |expression, languages|
-  #
-  #   values = languages.collect {|k, v| v}
-  #   # binding.pry
-  #     if values.include? emoticon
-  #       return expression
-  #     end
-  #
-  #
-  #   end
-  #   return "Sorry, that emoticon was not found"
-
-
-
 
   library = load_library(source)
   expression = library.keys.find do |key|
     library[key][:japanese] == emoticon
   end
   expression ? expression: "Sorry, that emoticon was not found"
-  # binding.pry
-#   library.each do |expression, languages|
-#     values = languages.collect {|k, v| v}
-#     # binding.pry
-#       if values.include? emoticon
-#         return expression
-#       end
-#     end
-#     return "Sorry, that emoticon was not found"
 end
