@@ -22,7 +22,7 @@ end
 def get_japanese_emoticon(source, emoticon)
   # code goes here
   library = load_library(source)
-  japanese_emoticon
+  japanese_emoticon = ""
   # binding.pry
   library.each do |expression, emoticons|
     if emoticons[:english] == emoticon
