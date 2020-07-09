@@ -29,7 +29,7 @@ def get_japanese_emoticon(source, emoticon)
       japanese_emote = emoticons[:japanese]
     end
   end
-  emote ? japanese_emote: "Sorry, that emoticon was not found"
+  emote ? "Sorry, that emoticon was not found": japanese_emote
 end
 
 
