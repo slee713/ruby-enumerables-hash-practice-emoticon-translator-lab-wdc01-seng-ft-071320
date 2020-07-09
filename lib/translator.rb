@@ -36,7 +36,7 @@ def get_japanese_emoticon(source, emoticon)
       # binding.pry
     end
 
-end
+
 
 
 def get_english_meaning(source, emoticon)
