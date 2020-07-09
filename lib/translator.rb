@@ -16,7 +16,11 @@ def load_library(emoticons)
     sorted_lib[expression][:japanese]=emote[1]
   end
   sorted_lib
+<<<<<<< HEAD
   #binding.pry
+=======
+  binding.pry
+>>>>>>> f464a6a4f937adcacee20e060254e9b8d18e8229
 end
 # binding.pry
 def get_japanese_emoticon(source, emoticon)
@@ -27,12 +31,40 @@ def get_japanese_emoticon(source, emoticon)
     library[key][:english] == emoticon
   end
   # binding.pry
+<<<<<<< HEAD
   emote ? library[emote][:japanese]: "Sorry, that emoticon was not found"
+=======
+    values = languages.collect {|k, v| v}
+    # binding.pry
+    values.include? emoticon
+        japanese_emote = languages[:japanese]
+      # binding.pry
+    end
+>>>>>>> f464a6a4f937adcacee20e060254e9b8d18e8229
 end
 
 
 def get_english_meaning(source, emoticon)
   # code goes here
+<<<<<<< HEAD
+=======
+
+  library = load_library(source)
+  # binding.pry
+  library.each do |expression, languages|
+
+    values = languages.collect {|k, v| v}
+    # binding.pry
+      if values.include? emoticon
+        return expression
+      end
+
+
+    end
+    return "Sorry, that emoticon was not found"
+
+
+>>>>>>> f464a6a4f937adcacee20e060254e9b8d18e8229
 
 
   library = load_library(source)
