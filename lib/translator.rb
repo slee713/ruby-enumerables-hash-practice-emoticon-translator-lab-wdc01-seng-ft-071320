@@ -42,18 +42,18 @@ end
 def get_english_meaning(source, emoticon)
   # code goes here
 
-  # 
+  #
   # library = load_library(source)
   # # binding.pry
   # library.each do |expression, languages|
-  # 
+  #
   #   values = languages.collect {|k, v| v}
   #   # binding.pry
   #     if values.include? emoticon
   #       return expression
   #     end
-  # 
-  # 
+  #
+  #
   #   end
   #   return "Sorry, that emoticon was not found"
 
