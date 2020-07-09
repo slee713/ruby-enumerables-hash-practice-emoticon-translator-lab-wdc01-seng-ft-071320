@@ -22,10 +22,15 @@ end
 def get_japanese_emoticon(source, emoticon)
   # code goes here
   library = load_library(source)
+  japanese_emoticon
   # binding.pry
   library.each do |expression, emoticons|
-    emoticons.include? emoticon ? emoticons[1]: "Sorry, that emoticon was not found"
+    if emoticons[:english] == emoticon]
+      japanese_emoticon =  emoticons[:japanese]
+      japanese_emoticon
+    end
   end
+  return "Sorry, that emoticon was not found"
 end
 
 
